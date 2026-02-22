@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | 家探し助手</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', Arial, sans-serif;
+      background: #f8f9fc;
+      color: #1a1a2e;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+      color: white;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 24px; margin-bottom: 6px; }
+    header p  { font-size: 14px; opacity: 0.8; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 24px;
+    }
+    .lang-switch a {
+      color: #2d6a9f;
+      text-decoration: none;
+      font-size: 13px;
+      border: 1px solid #2d6a9f;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    h2 {
+      font-size: 17px;
+      color: #1e3a5f;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8f0fe;
+    }
+    p  { font-size: 14px; margin-bottom: 10px; color: #444; }
+    ul { padding-left: 20px; }
+    li { font-size: 14px; color: #444; margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 24px;
+    }
+
+    /* English section */
+    .en { display: none; }
+    .en h2 { color: #1e3a5f; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🏠 家探し助手</h1>
+  <p>プライバシーポリシー / Privacy Policy</p>
+</header>
+
+<main>
+  <div class="lang-switch">
+    <a href="#" onclick="toggleLang(); return false;" id="lang-btn">English →</a>
+  </div>
+
+  <!-- ===== 日本語 ===== -->
+  <div class="ja">
+
+    <section>
+      <div class="badge">✓ 個人情報の収集なし</div>
+      <h2>1. 基本方針</h2>
+      <p>「家探し助手」（以下、本拡張機能）は、ユーザーのプライバシーを最大限尊重します。本拡張機能は、ユーザーの個人情報を収集・保存・販売・共有しません。</p>
+    </section>
+
+    <section>
+      <h2>2. 収集するデータ</h2>
+      <p>本拡張機能がユーザーのデバイス上に保存するデータは以下のみです：</p>
+      <ul>
+        <li>ユーザーが設定した検索条件（予算・希望エリア・間取りなど）</li>
+        <li>ユーザーが「保存する」ボタンで保存した物件情報（賃料・間取り・URLなど）</li>
+        <li>ユーザーが任意で入力したClaude APIキー</li>
+      </ul>
+      <p style="margin-top:12px">これらのデータは <strong>ユーザーのブラウザ内（chrome.storage.local）にのみ保存</strong> され、開発者を含む第三者には一切送信されません。</p>
+    </section>
+
+    <section>
+      <h2>3. 外部サービスへの通信</h2>
+      <p>本拡張機能がアクセスする外部サービスは以下のみです：</p>
+      <ul>
+        <li><strong>賃貸物件サイト（SUUMO・HOMES・CHINTAI・APAMAN）：</strong> ユーザーが閲覧中のページから物件情報を読み取るために使用します。本拡張機能からこれらのサイトにデータを送信することはありません。</li>
+        <li><strong>Anthropic Claude API（任意）：</strong> ユーザーが自身のAPIキーを設定した場合のみ、AI分析のためにAnthropicのサーバーと通信します。送信内容は物件情報のみであり、個人識別情報は含まれません。通信はユーザーのブラウザから直接Anthropicのサーバーに行われます。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 収集しないデータ</h2>
+      <ul>
+        <li>氏名・メールアドレス・電話番号などの個人情報</li>
+        <li>閲覧履歴・検索履歴</li>
+        <li>位置情報</li>
+        <li>クレジットカード・支払い情報</li>
+        <li>その他いかなる個人識別情報</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. リモートコード</h2>
+      <p>本拡張機能はリモートコードを一切使用しません。すべてのコードは拡張機能のパッケージ内に含まれており、外部からコードを読み込む処理はありません。</p>
+    </section>
+
+    <section>
+      <h2>6. データの削除</h2>
+      <p>ブラウザの拡張機能管理画面から本拡張機能をアンインストールすることで、保存されたすべてのデータが削除されます。また、設定ページからデータをリセットすることも可能です。</p>
+    </section>
+
+    <section>
+      <h2>7. ポリシーの変更</h2>
+      <p>本ポリシーを変更する場合は、このページを更新します。重要な変更については拡張機能のアップデートを通じてお知らせします。</p>
+    </section>
+
+    <section>
+      <h2>8. お問い合わせ</h2>
+      <p>プライバシーに関するご質問は、Chrome ウェブストアのサポートページよりお問い合わせください。</p>
+      <p style="margin-top:8px; color:#999; font-size:13px">最終更新日：2025年2月</p>
+    </section>
+
+  </div><!-- /.ja -->
+
+  <!-- ===== English ===== -->
+  <div class="en">
+
+    <section>
+      <div class="badge">✓ No Personal Data Collected</div>
+      <h2>1. Overview</h2>
+      <p>"Ie-Sagashi Assistant" (the "Extension") is committed to protecting user privacy. This extension does not collect, store, sell, or share any personal information.</p>
+    </section>
+
+    <section>
+      <h2>2. Data Stored Locally</h2>
+      <p>The only data stored by this extension is kept locally on your device:</p>
+      <ul>
+        <li>Search preferences set by the user (budget, area, room type, etc.)</li>
+        <li>Property listings saved by the user (rent, layout, URL, etc.)</li>
+        <li>Claude API key optionally entered by the user</li>
+      </ul>
+      <p style="margin-top:12px">All data is stored exclusively in your browser (<strong>chrome.storage.local</strong>) and is never transmitted to the developer or any third party.</p>
+    </section>
+
+    <section>
+      <h2>3. External Communications</h2>
+      <p>The extension communicates with the following external services only:</p>
+      <ul>
+        <li><strong>Real estate sites (SUUMO, HOMES, CHINTAI, APAMAN):</strong> The extension reads property data from pages the user is already visiting. No data is sent to these sites by the extension.</li>
+        <li><strong>Anthropic Claude API (optional):</strong> Only when the user provides their own API key, property details are sent to Anthropic's servers for AI analysis. No personally identifiable information is included. Communication occurs directly from your browser to Anthropic's servers.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Data We Do NOT Collect</h2>
+      <ul>
+        <li>Name, email address, phone number, or any personal identifiers</li>
+        <li>Browsing history or search history</li>
+        <li>Location data</li>
+        <li>Payment or financial information</li>
+        <li>Any other personally identifiable information</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Remote Code</h2>
+      <p>This extension does not use any remote code. All JavaScript, HTML, and CSS are fully contained within the extension package.</p>
+    </section>
+
+    <section>
+      <h2>6. Data Deletion</h2>
+      <p>Uninstalling the extension from your browser will delete all locally stored data. You may also reset your data from the extension's settings page.</p>
+    </section>
+
+    <section>
+      <h2>7. Policy Updates</h2>
+      <p>If this policy is updated, this page will be revised. Significant changes will be communicated through extension update notes.</p>
+    </section>
+
+    <section>
+      <h2>8. Contact</h2>
+      <p>For privacy-related inquiries, please contact us via the Chrome Web Store support page.</p>
+      <p style="margin-top:8px; color:#999; font-size:13px">Last updated: February 2025</p>
+    </section>
+
+  </div><!-- /.en -->
+</main>
+
+<footer>
+  &copy; 2025 家探し助手 — 家探しをもっとスマートに
+</footer>
+
+<script>
+  function toggleLang() {
+    const ja  = document.querySelector('.ja');
+    const en  = document.querySelector('.en');
+    const btn = document.getElementById('lang-btn');
+    if (en.style.display === 'block') {
+      ja.style.display = 'block';
+      en.style.display = 'none';
+      btn.textContent  = 'English →';
+    } else {
+      ja.style.display = 'none';
+      en.style.display = 'block';
+      btn.textContent  = '日本語 →';
+    }
+  }
+</script>
+
+</body>
+</html>
